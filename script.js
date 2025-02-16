@@ -13,7 +13,7 @@ async function fetchData(value) {
     requiredData(data);
 }
 function requiredData(data){
-    const address = data.address;
+    const address = data.resolvedAddress;
     const temp = data.currentConditions.temp;
     const humidity = data.currentConditions.humidity;
     const windspeed = data.currentConditions.windspeed;
